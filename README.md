@@ -79,6 +79,11 @@ $ bin/kafka-console-consumer.sh \
   --topic test 
 $ bin/kafka-console-consumer.sh \
   --bootstrap-server localhost:9092 \
+  --topic test2 \
+  --property print.key=true \
+  --property key.separator=":"
+$ bin/kafka-console-consumer.sh \
+  --bootstrap-server localhost:9092 \
   --topic test \
   --from-beginning
 ```
