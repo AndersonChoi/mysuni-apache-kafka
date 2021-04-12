@@ -1,1 +1,0 @@
-# mysuni-apache-kafka
