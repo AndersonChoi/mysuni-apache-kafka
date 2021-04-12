@@ -1,4 +1,4 @@
-package com.example;
+package com.example.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -25,6 +25,7 @@ public class MySuniConsumer {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(configs);
 
         consumer.subscribe(Arrays.asList(TOPIC_NAME));
+        //consumer.subscribe(Arrays.asList(TOPIC_NAME), new MyRebalanceListener());
 
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofSeconds(1));
