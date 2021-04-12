@@ -130,5 +130,5 @@ $ vi config/delete-record.conf
 ```
 $ bin/kafka-delete-records.sh \
   --bootstrap-server localhost:9092 \
-  --offset-json-file config/delete-record.config
+  --offset-json-file config/delete-record.conf
 ```
