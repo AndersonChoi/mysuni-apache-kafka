@@ -99,7 +99,7 @@ $ bin/kafka-consumer-groups.sh \
   
 $ bin/kafka-consumer-groups.sh \
   --bootstrap-server localhost:9092 \
-  --group test-group
+  --group test-group \
   --describe
  
 $ bin/kafka-consumer-groups.sh \
