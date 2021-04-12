@@ -66,7 +66,8 @@ $ bin/kafka-console-producer.sh \
   --topic test
 $ bin/kafka-console-producer.sh \
   --bootstrap-server localhost:9092 \
-  --topic test2 \   --property "parse.key=true" \
+  --topic test2 \
+  --property "parse.key=true" \
   --property "key.separator=:"
 ```
 
