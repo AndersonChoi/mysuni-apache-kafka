@@ -22,6 +22,12 @@
 
 ```
 $ bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+```
+$ vi config/server.properties
+advertised.listeners=PLAINTEXT://localhost:9092
+
 $ bin/kafka-server-start.sh config/server.properties
 ```
 
